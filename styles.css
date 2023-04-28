@@ -1,5 +1,6 @@
 :root { font-family: 'Inter', sans-serif; }
- @supports (font-variation-settings: normal) {
+
+@supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
 
