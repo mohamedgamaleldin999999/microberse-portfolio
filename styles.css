@@ -1,3 +1,8 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
 .nav {
   display: flex;
   width: 100%;
@@ -22,7 +27,7 @@
   font-family: 'Inter';
   font-weight: 700;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   font-size: 2.5em;
   display: flex;
   align-items: center;
@@ -30,7 +35,7 @@
 }
 
 .main-text span {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .scnd-text {
@@ -38,7 +43,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0px 27px;
+  padding: 0 27px;
   font-size: 1.4em;
 }
 
@@ -52,5 +57,5 @@
   margin: 5px 10px;
   font-size: 1.4em;
   text-decoration: none;
-  color: #505F79;
+  color: #505f79;
 }
