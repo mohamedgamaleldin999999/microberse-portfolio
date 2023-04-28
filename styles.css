@@ -24,7 +24,6 @@
 
 .main {
   background: url(images/header-illsutration-mobile.svg);
-  margin-top: 55px;
   display: flex;
   height: 41em;
   flex-direction: column;
@@ -35,14 +34,17 @@
   font-weight: 700;
   text-align: center;
   color: #172b4d;
-  font-size: 2.5em;
+  font-size: 2em;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 70px;
 }
 
-.green {
+.green-text {
   color: #36b37e;
+  font-size: 1.5em;
+  margin-top: 6px;
 }
 
 .scnd-text {
@@ -52,12 +54,14 @@
   text-align: center;
   padding: 0 27px;
   font-size: 20px;
+  margin-top: 11px;
 }
 
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 13px;
 }
 
 .social-icons a {
