@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 
-.main-text span {
+.green {
   color: #36b37e;
 }
 
@@ -51,7 +51,7 @@
   justify-content: center;
   text-align: center;
   padding: 0 27px;
-  font-size: 1.4em;
+  font-size: 20px;
 }
 
 .social-icons {
