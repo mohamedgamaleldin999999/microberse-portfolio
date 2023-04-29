@@ -103,12 +103,15 @@ ul {
 }
 
 .cards {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 4px 2px;
+  gap: 24px;
+  grid-template-columns: auto;
 }
 
 .card {
