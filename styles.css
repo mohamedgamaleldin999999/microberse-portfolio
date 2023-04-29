@@ -171,6 +171,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
 color: #3A4A42;
+width: 100%;
 }
 
 .languages {
@@ -208,10 +209,14 @@ color: #3A4A42;
 }
 
 .about-intro {
+  background: url(images/header-illsutration-mobile.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: url(images/bg.svg);
   background-size: auto;
   min-height: 338px;
-  margin: 0 18px;
+  padding: 40px 18px;
 }
 
 .cv {
@@ -220,4 +225,49 @@ color: #3A4A42;
 
 .about-text {
   margin-bottom: 20px;
+}
+
+.about-card {
+  background-color: #EBF0EE;
+  box-sizing: border-box;
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-bottom: 72px;
+  height: 327px;
+  width: 316px;
+}
+
+.about-img img {
+  display: flex;
+  max-width: 100%;
+}
+
+.about-li {
+  display: flex;
+  background-color: white;
+  margin: 4px;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36B37E;
+  text-align: center;
+  align-items: center;
+}
+
+.about-ul {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
