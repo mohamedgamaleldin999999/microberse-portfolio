@@ -187,7 +187,7 @@ width: 100%;
 .language {
   padding: 8px 12px;
   height: 32px;
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 4px;
 }
 
@@ -206,6 +206,14 @@ width: 100%;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition: ease 1s;
+}
+
+.view:hover {
+  background-color: white;
+  color: #36B37F;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .about-intro {
