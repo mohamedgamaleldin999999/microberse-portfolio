@@ -49,13 +49,16 @@
 }
 
 .scnd-text {
+  color: #42526e;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 27px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
-  margin-top: 11px;
+  line-height: 32px;
 }
 
 .social-icons {
@@ -191,13 +194,30 @@ color: #3A4A42;
   color: white;
   padding: 12px;
   gap: 10px;
-  width: 122px;
+  width: auto;
   height: 48px;
   background: #36B37F;
   border: none;
   border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.about-intro {
+  background: url(images/bg.svg);
+  background-size: auto;
+  min-height: 338px;
+  margin: 0 18px;
+}
+
+.cv {
+  margin-top: 24px;
+}
+
+.about-text {
+  margin-bottom: 20px;
 }
