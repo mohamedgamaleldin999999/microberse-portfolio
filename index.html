@@ -206,25 +206,24 @@
         </div>
     </section>    
     <section class="contact-me">
-        <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
-        <form>
-            <ul>
+        <div class="main-text">
+            <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+        </div>
+        <form class="form">
+            <ul class="form-list">
                 <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name">
+                    <input class="box" type="text" id="name" name="user_name" placeholder="Full name">
                 </li>
                 <li>
-                    <lable for="mail">Email:</lable>
-                    <input type="email" id="mail" name="user_email">
+                    <input class="box" type="email" id="mail" name="user_email" placeholder="Email adress">
                 </li>
                 <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="textarea"></textarea>
+                    <textarea class="box text-area" id="msg" name="textarea" placeholder="Hey I'd like to connect to..."></textarea>
                 </li>
-                <button name="submit" type="submit" class="view">
-                    Get in touch
-                </button>
             </ul>
+            <button name="submit" type="submit" class="view">
+                Get in touch
+            </button>
         </form>
     </section>
 </body>
