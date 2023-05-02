@@ -328,3 +328,28 @@ input::placeholder {
   font-size: 15px;
   line-height: 24px;
 }
+
+.mail {
+  color: #42526e;
+  margin-top: 57px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.footer {
+  margin-top: 26px;
+}
+
+.breaker-foot {
+  background-color: black;
+  display: flex;
+  height: 4px;
+  border: 1px solid #d0d9d5;
+  border-radius: 8px;
+  padding: 3px 0px;
+  margin: 10px 43px;
+  margin-top: 29px;
+}
