@@ -319,7 +319,7 @@ input::placeholder {
 }
 
 .text-area {
-  color: #42526E;
+  color: #42526e;
   border: 1px solid #60c095;
   height: 114px;
   font-family: 'Inter', sans-serif;
@@ -349,7 +349,7 @@ input::placeholder {
   height: 4px;
   border: 1px solid #d0d9d5;
   border-radius: 8px;
-  padding: 3px 0px;
+  padding: 3px 0;
   margin: 10px 43px;
   margin-top: 29px;
 }
