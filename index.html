@@ -14,12 +14,17 @@
             <div class="menu-btn">
                 <i class="fa-solid fa-bars fa-xl"></i>
             </div>
+            <div class="top-links">
+                <a class="top-link" href="#works">Portfolio</a>
+                <a class="top-link" href="#about">About</a>
+                <a class="top-link" href="#contact-me">Contact</a>
+            </div>
         </nav>
     </header>
     <section class="main">
         <div class="main-bg absolute"></div>
         <div class="main-text">
-            <h1>Hey there.<br> I’m Jimmy.</h1>
+            <h1>Hey there. I’m Jimmy.</h1>
             <h class="green-text">I’m a software developer</h>
         </div>
         <div class="scnd-text">
@@ -148,7 +153,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-bg"></div>
         <div class="about-intro">
             <div class="main-text about-text">
@@ -207,26 +212,28 @@
             </div>
         </div>
     </section>    
-    <section class="contact-me">
-        <div class="main-text">
-            <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+    <section class="contact-me" id="contact-me">
+        <div class="contact-div">
+            <div class="main-text contact-text">
+                <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+            </div>
+            <form  action="https://formspree.io/f/mbjeworl" method="POST" class="form">
+                <ul class="form-list">
+                    <li>
+                        <input class="box" type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>
+                    </li>
+                    <li>
+                        <input class="box" type="email" id="mail" name="email" placeholder="Email adress" required>
+                    </li>
+                    <li>
+                        <textarea class="box text-area" id="msg" name="message" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
+                    </li>
+                </ul>
+                <button name="submit" type="submit" class="view">
+                    Get in touch
+                </button>
+            </form>
         </div>
-        <form  action="https://formspree.io/f/mbjeworl" method="POST" class="form">
-            <ul class="form-list">
-                <li>
-                    <input class="box" type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>
-                </li>
-                <li>
-                    <input class="box" type="email" id="mail" name="email" placeholder="Email adress" required>
-                </li>
-                <li>
-                    <textarea class="box text-area" id="msg" name="message" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
-                </li>
-            </ul>
-            <button name="submit" type="submit" class="view">
-                Get in touch
-            </button>
-        </form>
         <div class="scnd-text mail">
             <p>mohammedjamal999999@gmail.com</p>
         </div>
