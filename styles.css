@@ -133,6 +133,7 @@ ul {
   padding: 4px 2px;
   gap: 24px;
   grid-template-columns: auto;
+  min-width: 20em;
 }
 
 .card {
@@ -319,6 +320,12 @@ h3 {
   margin-top: 54px;
 }
 
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form {
   margin-top: 58px;
   width: 327px;
@@ -375,6 +382,7 @@ input::placeholder {
 }
 
 .footer {
+  width: 100%;
   margin-top: 26px;
 }
 
@@ -385,7 +393,7 @@ input::placeholder {
   border: 1px solid #d0d9d5;
   border-radius: 8px;
   padding: 3px 0;
-  margin: 10px 43px;
+  margin: 10px 113px;
   margin-top: 29px;
 }
 
@@ -436,6 +444,7 @@ input::placeholder {
   .main-text {
     padding: 0;
     margin: 0;
+    min-width: 400px;
   }
 
   .works {
@@ -443,6 +452,68 @@ input::placeholder {
   }
 
   .breaker-con {
+    display: none;
+  }
+
+  .cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .about {
+    margin-top: 190px;
+    background: url(images/about-desktop-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .scnd-text {
+    margin-top: 30px;
+    max-width: 920px;
+    min-width: 400px;
+  }
+  
+  .contact-div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 140px;
+    margin-top: 50px;
+  }
+
+  .contact-text {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 763px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 52px;
+    margin-right: 20px;
+  }
+
+  .form {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 230px;
+    border-top: solid 1px #dfe1e6;
+  }
+
+  .social-icons {
+    margin-bottom: 13px;
+  }
+
+  .breaker-foot {
     display: none;
   }
 }
