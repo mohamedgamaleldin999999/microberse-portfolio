@@ -397,7 +397,7 @@ input::placeholder {
   margin-top: 29px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .menu-btn {
     display: none;
   }
@@ -431,7 +431,6 @@ input::placeholder {
     color: #172b4d;
     text-decoration: none;
     margin: 0 35px;
-    text-decoration: none;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -473,7 +472,7 @@ input::placeholder {
     max-width: 920px;
     min-width: 400px;
   }
-  
+
   .contact-div {
     width: 100%;
     flex-direction: row;
@@ -487,7 +486,7 @@ input::placeholder {
     align-items: center;
     align-content: center;
     width: 763px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
