@@ -14,7 +14,6 @@ html {
   box-sizing: border-box;
 }
 
-
 .nav {
   display: flex;
   width: 100%;
@@ -130,7 +129,7 @@ ul {
 
 .down:hover {
   scale: 1.2;
-  transition:ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .cards {
