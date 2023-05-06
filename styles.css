@@ -153,6 +153,11 @@ ul {
   border: 1px solid #d0d9d5;
   border-radius: 8px;
   height: 474px;
+  transition: ease 1s;
+}
+
+.card:hover {
+  scale: 1.1;
 }
 
 .card-body {
