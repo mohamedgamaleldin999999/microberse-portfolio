@@ -59,7 +59,7 @@ Visual Studio Code using HTML, Css, and Javascript Languages
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://mohamedgamaleldin999999.github.io/my-personal-portfolio/index.html)
+- [Live Demo Link](https://mohamedgamaleldin999999.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
