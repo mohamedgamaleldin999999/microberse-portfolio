@@ -497,7 +497,6 @@ input::placeholder {
     left: 0;
     top: 0;
     flex-direction: row;
-    width: 100%;
     text-align: center;
     height: 40px;
     padding: 10px 30px;
