@@ -309,6 +309,67 @@ h3 {
   font-size: 1.2em;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+  display: none;
+  padding-top: 200px;
+  z-index: 999;
+}
+
+.popup-content {
+  position: fixed;
+  width: 500px;
+  height: 95vh;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.pop-up-card-img {
+  width: 320px;
+  display: flex;
+  align-self: center;
+}
+
+.project-info {
+  margin-top: 20px;
+}
+
+.project-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.close-popup {
+  position: absolute;
+  right: 80px;
+  top: -50px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .about {
   position: relative;
 }

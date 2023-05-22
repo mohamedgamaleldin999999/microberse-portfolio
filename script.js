@@ -11,6 +11,21 @@ const initApp = () => {
     hamburger.classList.remove('active');
     topLinks.classList.remove('active');
   }));
+
+  const viewButton = document.querySelector('.view');
+
+  const popup = document.querySelector('.popup');
+
+  viewButton.addEventListener('click', () => {
+    popup.style.display = 'flex';
+  });
+
+  const closeButton = document.querySelector('.close-popup');
+
+  closeButton.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+
 };
 
 document.addEventListener('DOMContentLoaded', () => {
