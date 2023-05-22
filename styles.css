@@ -27,8 +27,8 @@ html {
 }
 
 .hamburger {
-  display:block;
-  cursor:pointer;
+  display: block;
+  cursor: pointer;
 }
 
 .bar {
@@ -41,15 +41,15 @@ html {
   background-color: black;
 }
 
-.hamburger.active .bar:nth-child(2){
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1){
+.hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -468,7 +468,7 @@ input::placeholder {
   }
 
   .hamburger {
-    display:none;
+    display: none;
   }
 
   .main {
@@ -494,6 +494,13 @@ input::placeholder {
     width: 100%;
     display: flex;
     justify-content: center;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding: 10px 30px;
   }
 
   .top-link {
@@ -501,7 +508,7 @@ input::placeholder {
     text-decoration: none;
     margin: 0 35px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
   }
 
