@@ -316,7 +316,8 @@ h3 {
 .about-bg {
   position: absolute;
   display: grid;
-  background-image: url("images/about-left-frame.svg"),
+  background-image:
+    url("images/about-left-frame.svg"),
     url("images/about-right-frame.svg");
   background-position: 0 0%, 100% 0;
   background-repeat: no-repeat;
