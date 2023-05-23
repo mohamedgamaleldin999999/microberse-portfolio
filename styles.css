@@ -225,11 +225,12 @@ ul {
 
 .card-img {
   width: 100%;
-  height: 252px;
   display: flex;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   flex: 1.13;
+  background: #ebf0ee;
+  height: 250px;
 }
 
 .info {
@@ -284,7 +285,7 @@ h3 {
   width: 100%;
 }
 
-.view {
+.view-btn {
   color: white;
   padding: 12px;
   gap: 10px;
@@ -302,11 +303,146 @@ h3 {
   transition: ease 1s;
 }
 
-.view:hover {
+.view-btn:hover {
   background-color: #008552;
   color: #fff;
   cursor: pointer;
   font-size: 1.2em;
+}
+
+
+
+/* modal */
+.model-section {
+  position: relative;
+  z-index: 2000;
+}
+
+.model {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 3000;
+}
+
+.model-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.model-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 10px;
+}
+
+.model-body h2 {
+  color: #172b4d;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.model-body ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 261px;
+  height: 32px;
+}
+
+.mobile-img {
+  display: block;
+  padding: 16px;
+}
+
+.desktop-img {
+  display: none;
+  padding: 78px 24px 24px;
+}
+
+.model-body ul li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.mobile-list {
+  display: block;
+}
+
+.desktop-list {
+  display: none;
+}
+
+.model-body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.model-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  padding: 10px;
+}
+
+.model-footer button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  background-color: #36b37f;
+  cursor: pointer;
+  width: 150px;
+}
+
+.btn-live,
+.btn-source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-live .fa-thin {
+  /* text-decoration: none; */
+  color: red;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #555;
+  z-index: 1000;
+  filter: blur(10px);
 }
 
 .about {
