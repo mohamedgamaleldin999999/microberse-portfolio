@@ -211,6 +211,7 @@ ul {
   border-radius: 8px;
   height: 474px;
   transition: ease 1s;
+  flex-direction: column;
 }
 
 .card:hover {
