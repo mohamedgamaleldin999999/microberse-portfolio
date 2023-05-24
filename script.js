@@ -132,6 +132,59 @@ const initApp = () => {
     button.addEventListener('click', showPopup);
   });
 
+  // dynamic modal
+const dynamicSection = document.getElementById('dynamic-section');
+
+const sectioHTML = `
+<section id="model-section" class="model-section">
+      <div class="model">
+        <div class="model-content">
+          <div class="model-header">
+            <button class="model-close" type="button">X</button>
+            <img src="./images/Snapshoot Portfolio (1).png" alt="Model-image" />
+          </div>
+          <div class="model-body">
+            <h2>Keeping track of hundreds of components</h2>
+            <div class="mobile-list">
+              <ul id="mobile-components"></ul>
+            </div>
+            <div class="desktop-list">
+              <ul id="desktop-componets"></ul>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s.
+            </p>
+            </div>
+          <div class="model-footer desktop-flex">
+            <button class="btn-live" id="live-button">
+              See live
+              <span
+                ><i
+                  class="fa-thin fa-arrow-up-left-from-circle fa-rotate-90"
+                ></i
+              ></span>
+            </button>
+            <button class="btn-source" id="source-button">
+              See source <span><i class="fa-brands fa-github"></i></span>
+            </button>
+            </div>
+          
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </section>
+    `;
+dynamicSection.innerHTML = sectioHTML;
+
 };
 
 document.addEventListener('DOMContentLoaded', () => {
