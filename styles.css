@@ -403,21 +403,19 @@ h3 {
   flex-direction: row;
   align-items: center;
   gap: 32px;
-  padding: 10px;
 }
 
 .model-footer button {
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
   background-color: #36b37f;
   cursor: pointer;
-  width: 150px;
 }
 
 .btn-live,
@@ -608,6 +606,23 @@ input::placeholder {
 }
 
 @media (min-width: 768px) {
+
+  .model-content {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .model-body h2 {
+    max-width: 500px;
+  }
+
+  .model-footer {
+    position: absolute;
+    top: calc(100% - 25rem);
+    right: 1rem;
+    width: 40%;
+  }
+
   .menu-btn {
     display: none;
   }
@@ -764,7 +779,7 @@ input::placeholder {
   .model-footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 40px;
   }
 }

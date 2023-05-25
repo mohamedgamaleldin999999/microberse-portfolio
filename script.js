@@ -144,7 +144,7 @@ const initApp = () => {
             <img src='./images/Snapshoot Portfolio (1).png' alt='Model-image' />
           </div>
           <div class='model-body'>
-            <h2>Keeping track of hundreds of components</h2>
+            <h2>Keeping track of hundreds of<br> components</h2>
             <div class='mobile-list'>
               <ul id='mobile-components'></ul>
             </div>
