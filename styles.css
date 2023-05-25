@@ -311,8 +311,6 @@ h3 {
   font-size: 1.2em;
 }
 
-
-
 /* modal */
 .model-section {
   position: relative;
@@ -737,35 +735,35 @@ input::placeholder {
     display: none;
   }
 
-    /* modal */
-    .model-container {
-      padding-left: 13px;
-    }
-  
-    .mobile-img {
-      display: none;
-    }
-  
-    .desktop-img {
-      display: block;
-    }
-  
-    .mobile-list {
-      display: none;
-    }
-  
-    .desktop-list {
-      display: block;
-    }
-  
-    .model-body ul {
-      width: 510px;
-    }
-  
-    .model-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-    }
+  /* modal */
+  .model-container {
+    padding-left: 13px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+
+  .mobile-list {
+    display: none;
+  }
+
+  .desktop-list {
+    display: block;
+  }
+
+  .model-body ul {
+    width: 510px;
+  }
+
+  .model-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
 }
