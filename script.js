@@ -113,14 +113,16 @@ const initApp = () => {
       const overlay = document.getElementById('overlay');
       modelSection.style.display = 'block';
       overlay.style.display = 'block';
-    })
+    });
   });
 
   // dynamic modal
   const displayPopup = (project) => {
     const dynamicSection = document.getElementById('dynamic-section');
     let list = '';
-    project.technologies.map((technology) => list += `<li>${technology}</li>`);
+    project.technologies.map((technology) => {
+      list += `<li>${technology}</li>`;
+    });    
     const sectioHTML = `
 <section id='model-section' class='model-section'>
       <div class='model'>
@@ -142,8 +144,7 @@ const initApp = () => {
             <h2>${project.name}</h2>
             <div class='desktop-list'>
               <ul id='desktop-componets'>
-              ${list
-      }
+              ${list}
               </ul>
             </div>
             <p>
@@ -183,10 +184,22 @@ const initApp = () => {
     modelCloseButton.addEventListener('click', () => {
       modelSection.style.display = 'none';
       overlay.style.display = 'none';
-    });
+  });
   };
 
-}
+
+  // Append for projects container
+  projectsContainer.appendChild(projectElement);
+  buttonElement.addEventListener('click', () => {
+    displayPopup(project);
+
+    const modelSection = document.querySelector('.model');
+    const overlay = document.getElementById('overlay');
+    modelSection.style.display = 'block';
+    overlay.style.display = 'block';
+  });
+
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
