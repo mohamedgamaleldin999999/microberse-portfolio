@@ -113,7 +113,7 @@ const initApp = () => {
       const overlay = document.getElementById('overlay');
       modelSection.style.display = 'block';
       overlay.style.display = 'block';
-    })
+    });
   });
 
   // dynamic modal
@@ -184,8 +184,7 @@ const initApp = () => {
       overlay.style.display = 'none';
     });
   };
-
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
