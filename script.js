@@ -7,8 +7,7 @@ const initApp = () => {
     topLinks.classList.toggle('active');
   });
 
-  document.querySelectorAll('.top-link').forEach((n) =>
-    n.addEventListener('click', () => {
+  document.querySelectorAll('.top-link').forEach((n) => n.addEventListener('click', () => {
       hamburger.classList.remove('active');
       topLinks.classList.remove('active');
     }));
