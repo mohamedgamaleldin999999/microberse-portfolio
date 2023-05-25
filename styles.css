@@ -327,6 +327,7 @@ h3 {
   z-index: 3000;
   height: 90vh;
   overflow-y: scroll;
+  border-radius: 8px;
 }
 
 .model-close {
@@ -336,6 +337,10 @@ h3 {
   padding: 10px;
   cursor: pointer;
   border: none;
+}
+
+.model-content {
+  padding: 6px;
 }
 
 .model-body {
@@ -383,6 +388,7 @@ h3 {
   background: #ebf0ee;
   border-radius: 4px;
   list-style: none;
+  min-width: fit-content;
 }
 
 .mobile-list {
@@ -404,15 +410,19 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 32px;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 12px;
 }
 
 .model-footer button {
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 550;
+  font-size: 15px;
+  line-height: 20px;
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
@@ -420,12 +430,16 @@ h3 {
   cursor: pointer;
 }
 
+.model-footer span {
+  margin: 0 8px;
+}
+
 .btn-live,
 .btn-source {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  width: 47%;
 }
 
 .btn-live .fa-thin {
@@ -622,7 +636,19 @@ input::placeholder {
     position: absolute;
     top: calc(100% - 25rem);
     right: 1rem;
-    width: 40%;
+    width: 28%;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .model-footer button {
+    font-size: 12px;
+    padding: 10px 0;
+    margin: 0;
   }
 
   .menu-btn {
@@ -779,9 +805,6 @@ input::placeholder {
   }
 
   .model-footer {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 40px;
+    
   }
 }
