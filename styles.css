@@ -319,12 +319,14 @@ h3 {
 
 .model {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   z-index: 3000;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 .model-close {
