@@ -8,9 +8,9 @@ const initApp = () => {
   });
 
   document.querySelectorAll('.top-link').forEach((n) => n.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      topLinks.classList.remove('active');
-    }));
+    hamburger.classList.remove('active');
+    topLinks.classList.remove('active');
+  }));
 
   const projects = [
     {
