@@ -120,7 +120,7 @@ const initApp = () => {
   const displayPopup = (project) => {
     const dynamicSection = document.getElementById('dynamic-section');
     let list = '';
-    project.technologies.map((technology) => list += `<li>${technology}</li>`);
+    project.technologies.map((technology) => `<li>${technology}</li>`);
     const sectioHTML = `
 <section id='model-section' class='model-section'>
       <div class='model'>
