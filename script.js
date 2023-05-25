@@ -119,7 +119,7 @@ const initApp = () => {
   // dynamic modal
   const displayPopup = (project) => {
     const dynamicSection = document.getElementById('dynamic-section');
-    let list = '';
+    const list = '';
     project.technologies.map((technology) => `<li>${technology}</li>`);
     const sectioHTML = `
 <section id='model-section' class='model-section'>
