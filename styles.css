@@ -361,7 +361,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 8px;
   width: 261px;
   height: 32px;
@@ -634,7 +634,7 @@ input::placeholder {
 
   .model-footer {
     position: absolute;
-    top: calc(100% - 25rem);
+    top: calc(100% - 22rem);
     right: 1rem;
     width: 28%;
     justify-content: right;

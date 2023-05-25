@@ -16,7 +16,7 @@ const initApp = () => {
     {
       name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 1 description',
-      image: 'path/to/image1.jpg',
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live1',
       sourceLink: 'https://example.com/source1',
@@ -25,7 +25,7 @@ const initApp = () => {
     {
       name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 2 description',
-      image: 'path/to/image2.jpg',
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live2',
       sourceLink: 'https://example.com/source2',
@@ -33,8 +33,8 @@ const initApp = () => {
 
     {
       name: "Most-Post Storie's <br/> Gain+Glory",
-      description: 'Project 2 description',
-      image: 'path/to/image2.jpg',
+      description: 'Project 3 description',
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live2',
       sourceLink: 'https://example.com/source2',
@@ -42,8 +42,8 @@ const initApp = () => {
 
     {
       name: "Most-Post Storie's <br/> Gain+Glory",
-      description: 'Project 2 description',
-      image: 'path/to/image2.jpg',
+      description: 'Project 4 description',
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live2',
       sourceLink: 'https://example.com/source2',
@@ -51,8 +51,8 @@ const initApp = () => {
 
     {
       name: "Most-Post Storie's <br/> Gain+Glory",
-      description: 'Project 2 description',
-      image: 'path/to/image2.jpg',
+      description: 'Project 5 description',
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live2',
       sourceLink: 'https://example.com/source2',
@@ -60,8 +60,8 @@ const initApp = () => {
 
     {
       name: "Most-Post Storie's <br/> Gain+Glory",
-      description: 'Project 2 description',
-      image: 'path/to/image2.jpg',
+      description: 'Project 6 description',
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live2',
       sourceLink: 'https://example.com/source2',
@@ -106,56 +106,48 @@ const initApp = () => {
 
     // Append for projects container
     projectsContainer.appendChild(projectElement);
-  });
+    buttonElement.addEventListener('click', () => {
+      displayPopup(project);
 
-  // model
-
-  const modelSection = document.querySelector('.model');
-  const modelCloseButton = document.querySelector('.model-close');
-  const overlay = document.getElementById('overlay');
-  const projectButtons = document.querySelectorAll('.view-btn');
-
-  function showPopup() {
-    modelSection.style.display = 'block';
-    overlay.style.display = 'block';
-  }
-
-  function hidePopup() {
-    modelSection.style.display = 'none';
-    overlay.style.display = 'none';
-  }
-
-  // document.querySelector('.btn-live').addEventListener('click', showPopup);
-  modelCloseButton.addEventListener('click', hidePopup);
-
-  projectButtons.forEach((button) => {
-    button.addEventListener('click', showPopup);
+      const modelSection = document.querySelector('.model');
+      const overlay = document.getElementById('overlay');
+      modelSection.style.display = 'block';
+      overlay.style.display = 'block';
+    })
   });
 
   // dynamic modal
-  const dynamicSection = document.getElementById('dynamic-section');
-
-  const sectioHTML = `
+  const displayPopup = (project) => {
+    const dynamicSection = document.getElementById('dynamic-section');
+    let list = '';
+    project.technologies.map((technology) => list += `<li>${technology}</li>`);
+    const sectioHTML = `
 <section id='model-section' class='model-section'>
       <div class='model'>
         <div class='model-content'>
           <div class='model-header'>
             <button class='model-close' type='button'>X</button>
-            <img src='./images/Snapshoot Portfolio (1).png' alt='Model-image' />
+            <img
+            class="mobile-img"
+            src="${project.image.mobile}"
+            alt="Model-image"
+          />
+          <img
+            class="desktop-img"
+            src="${project.image.desktop}"
+            alt=""
+          />
           </div>
           <div class='model-body'>
-            <h2>Keeping track of hundreds of<br> components</h2>
-            <div class='mobile-list'>
-              <ul id='mobile-components'></ul>
-            </div>
+            <h2>${project.name}</h2>
             <div class='desktop-list'>
-              <ul id='desktop-componets'></ul>
+              <ul id='desktop-componets'>
+              ${list
+      }
+              </ul>
             </div>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s.
+              ${project.description}
             </p>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -183,8 +175,18 @@ const initApp = () => {
       <div id='overlay'></div>
     </section>
     `;
-  dynamicSection.innerHTML = sectioHTML;
-};
+    dynamicSection.innerHTML = sectioHTML;
+
+    const overlay = document.getElementById('overlay');
+    const modelSection = document.querySelector('.model');
+    const modelCloseButton = document.querySelector('.model-close');
+    modelCloseButton.addEventListener('click', () => {
+      modelSection.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+  };
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
