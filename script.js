@@ -206,7 +206,7 @@ const initApp = () => {
     overlay.style.display = 'block';
   });
 
-};
+}};
 
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
