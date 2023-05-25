@@ -68,74 +68,6 @@ const initApp = () => {
     },
   ];
 
-    // dynamic modal
-    const displayPopup = (project) => {
-      const dynamicSection = document.getElementById('dynamic-section');
-      const list = '';
-      project.technologies.map((technology) => `<li>${technology}</li>`);
-      const sectioHTML = `
-  <section id='model-section' class='model-section'>
-        <div class='model'>
-          <div class='model-content'>
-            <div class='model-header'>
-              <button class='model-close' type='button'>X</button>
-              <img
-              class="mobile-img"
-              src="${project.image.mobile}"
-              alt="Model-image"
-            />
-            <img
-              class="desktop-img"
-              src="${project.image.desktop}"
-              alt=""
-            />
-            </div>
-            <div class='model-body'>
-              <h2>${project.name}</h2>
-              <div class='desktop-list'>
-                <ul id='desktop-componets'>
-                ${list}
-                </ul>
-              </div>
-              <p>
-                ${project.description}
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it 1960s.
-              </p>
-              </div>
-            <div class='model-footer desktop-flex'>
-              <button class='btn-live' id='live-button'>
-                See live
-                <span
-                  ><i
-                    class='fa-thin fa-arrow-up-left-from-circle fa-rotate-90'
-                  ></i
-                ></span>
-              </button>
-              <button class='btn-source' id='source-button'>
-                See source <span><i class='fa-brands fa-github'></i></span>
-              </button>
-              </div>
-            
-          </div>
-        </div>
-        <div id='overlay'></div>
-      </section>
-      `;
-      dynamicSection.innerHTML = sectioHTML;
-  
-      const overlay = document.getElementById('overlay');
-      const modelSection = document.querySelector('.model');
-      const modelCloseButton = document.querySelector('.model-close');
-      modelCloseButton.addEventListener('click', () => {
-        modelSection.style.display = 'none';
-        overlay.style.display = 'none';
-      });
-    };
 
   const projectsContainer = document.querySelector('.cards');
 
@@ -166,6 +98,74 @@ const initApp = () => {
       langItemElement.textContent = technology;
       langListElement.appendChild(langItemElement);
     });
+      // dynamic modal
+  const displayPopup = (project) => {
+    const dynamicSection = document.getElementById('dynamic-section');
+    const list = '';
+    project.technologies.map((technology) => `<li>${technology}</li>`);
+    const sectioHTML = `
+<section id='model-section' class='model-section'>
+      <div class='model'>
+        <div class='model-content'>
+          <div class='model-header'>
+            <button class='model-close' type='button'>X</button>
+            <img
+            class="mobile-img"
+            src="${project.image.mobile}"
+            alt="Model-image"
+          />
+          <img
+            class="desktop-img"
+            src="${project.image.desktop}"
+            alt=""
+          />
+          </div>
+          <div class='model-body'>
+            <h2>${project.name}</h2>
+            <div class='desktop-list'>
+              <ul id='desktop-componets'>
+              ${list}
+              </ul>
+            </div>
+            <p>
+              ${project.description}
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s.
+            </p>
+            </div>
+          <div class='model-footer desktop-flex'>
+            <button class='btn-live' id='live-button'>
+              See live
+              <span
+                ><i
+                  class='fa-thin fa-arrow-up-left-from-circle fa-rotate-90'
+                ></i
+              ></span>
+            </button>
+            <button class='btn-source' id='source-button'>
+              See source <span><i class='fa-brands fa-github'></i></span>
+            </button>
+            </div>
+          
+        </div>
+      </div>
+      <div id='overlay'></div>
+    </section>
+    `;
+    dynamicSection.innerHTML = sectioHTML;
+
+    const overlay = document.getElementById('overlay');
+    const modelSection = document.querySelector('.model');
+    const modelCloseButton = document.querySelector('.model-close');
+    modelCloseButton.addEventListener('click', () => {
+      modelSection.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+  };
 
     //  'See Project' button
     const buttonElement = document.createElement('button');
