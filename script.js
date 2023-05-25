@@ -97,12 +97,12 @@ const initApp = () => {
       langItemElement.textContent = technology;
       langListElement.appendChild(langItemElement);
     });
-  // dynamic modal
-  const displayPopup = (project) => {
-    const dynamicSection = document.getElementById('dynamic-section');
-    const list = '';
-    project.technologies.map((technology) => `<li>${technology}</li>`);
-    const sectioHTML = `
+    // dynamic modal
+    const displayPopup = (project) => {
+      const dynamicSection = document.getElementById('dynamic-section');
+      const list = '';
+      project.technologies.map((technology) => `<li>${technology}</li>`);
+      const sectioHTML = `
 <section id='model-section' class='model-section'>
       <div class='model'>
         <div class='model-content'>
@@ -155,7 +155,7 @@ const initApp = () => {
       <div id='overlay'></div>
     </section>
     `;
-    dynamicSection.innerHTML = sectioHTML;
+      dynamicSection.innerHTML = sectioHTML;
 
       const overlay = document.getElementById('overlay');
       const modelSection = document.querySelector('.model');
