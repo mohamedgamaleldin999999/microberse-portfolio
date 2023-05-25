@@ -68,7 +68,6 @@ const initApp = () => {
     },
   ];
 
-
   const projectsContainer = document.querySelector('.cards');
 
   projects.forEach((project) => {
@@ -98,7 +97,7 @@ const initApp = () => {
       langItemElement.textContent = technology;
       langListElement.appendChild(langItemElement);
     });
-      // dynamic modal
+  // dynamic modal
   const displayPopup = (project) => {
     const dynamicSection = document.getElementById('dynamic-section');
     const list = '';
