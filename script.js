@@ -68,6 +68,13 @@ const initApp = () => {
     },
   ];
 
+  const displayPopup = (project) => {
+    const dynamicSection = document.getElementById('dynamic-section');
+    let list = '';
+    project.technologies.map((technology) => {
+      list += `<li>${technology}</li>`;
+  });   
+
   const projectsContainer = document.querySelector('.cards');
 
   projects.forEach((project) => {
@@ -122,7 +129,7 @@ const initApp = () => {
     let list = '';
     project.technologies.map((technology) => {
       list += `<li>${technology}</li>`;
-    });    
+    });
     const sectioHTML = `
 <section id='model-section' class='model-section'>
       <div class='model'>
