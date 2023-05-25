@@ -157,14 +157,14 @@ const initApp = () => {
     `;
     dynamicSection.innerHTML = sectioHTML;
 
-    const overlay = document.getElementById('overlay');
-    const modelSection = document.querySelector('.model');
-    const modelCloseButton = document.querySelector('.model-close');
-    modelCloseButton.addEventListener('click', () => {
-      modelSection.style.display = 'none';
-      overlay.style.display = 'none';
-    });
-  };
+      const overlay = document.getElementById('overlay');
+      const modelSection = document.querySelector('.model');
+      const modelCloseButton = document.querySelector('.model-close');
+      modelCloseButton.addEventListener('click', () => {
+        modelSection.style.display = 'none';
+        overlay.style.display = 'none';
+      });
+    };
 
     //  'See Project' button
     const buttonElement = document.createElement('button');
