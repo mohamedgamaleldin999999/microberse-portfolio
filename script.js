@@ -14,7 +14,7 @@ const initApp = () => {
 
   const projects = [
     {
-      name: 'Project 1',
+      name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 1 description',
       image: 'path/to/image1.jpg',
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -23,7 +23,7 @@ const initApp = () => {
     },
 
     {
-      name: 'Project 2',
+      name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 2 description',
       image: 'path/to/image2.jpg',
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -32,7 +32,7 @@ const initApp = () => {
     },
 
     {
-      name: 'Project 3',
+      name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 2 description',
       image: 'path/to/image2.jpg',
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -41,7 +41,7 @@ const initApp = () => {
     },
 
     {
-      name: 'Project 4',
+      name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 2 description',
       image: 'path/to/image2.jpg',
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -50,7 +50,7 @@ const initApp = () => {
     },
 
     {
-      name: 'Project 5',
+      name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 2 description',
       image: 'path/to/image2.jpg',
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -59,7 +59,7 @@ const initApp = () => {
     },
 
     {
-      name: 'Project 6',
+      name: "Most-Post Storie's <br/> Gain+Glory",
       description: 'Project 2 description',
       image: 'path/to/image2.jpg',
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -84,7 +84,7 @@ const initApp = () => {
 
     const titleElement = document.createElement('h3');
     titleElement.classList.add('project-title');
-    titleElement.innerHTML = "Most-Post Storie's <br/> Gain+Glory";
+    titleElement.innerHTML = project.name;
     contentElement.appendChild(titleElement);
 
     const langListElement = document.createElement('ul');
