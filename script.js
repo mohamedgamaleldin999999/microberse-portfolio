@@ -202,7 +202,7 @@ const initApp = () => {
       errMsg.style.display = 'none';
       email.style.border = '1px solid green';
     }
-});
+  });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
