@@ -18,8 +18,8 @@ const initApp = () => {
       description: 'Project 1 description',
       image: { mobile: '/images/Screenshot 2023-07-20 022314.png', desktop: '/images/Screenshot 2023-07-20 022314.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-      liveLink: 'https://example.com/live1',
-      sourceLink: 'https://example.com/source1',
+      liveLink: 'https://arabic-with-jamal.github.io/html/Egyptian%20Arabic/Starter/Lesson-01/01.html',
+      sourceLink: 'https://github.com/Arabic-with-Jamal/Arabic-with-Jamal.github.io',
     },
 
     {
@@ -74,8 +74,9 @@ const initApp = () => {
     const projectElement = document.createElement('div');
     projectElement.classList.add('card');
 
-    const imageElement = document.createElement('div');
+    const imageElement = document.createElement('img');
     imageElement.classList.add('card-img');
+    imageElement.setAttribute('src', project.image.desktop);
     projectElement.appendChild(imageElement);
 
     const contentElement = document.createElement('div');
@@ -137,14 +138,8 @@ const initApp = () => {
             </p>
             </div>
           <div class='model-footer desktop-flex'>
-            <button class='btn-live' id='live-button'>
-              See live
-              <span
-                ><i
-                  class='fa-thin fa-arrow-up-left-from-circle fa-rotate-90'
-                ></i
-              ></span>
-            </button>
+            <a class='btn-live' href='${project.liveLink}'><button  id='live-button'>see live</button></a>
+              
             <button class='btn-source' id='source-button'>
               See source <span><i class='fa-brands fa-github'></i></span>
             </button>
