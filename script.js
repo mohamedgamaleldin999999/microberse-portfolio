@@ -14,9 +14,9 @@ const initApp = () => {
 
   const projects = [
     {
-      name: "Most-Post Storie's <br/> Gain+Glory",
+      name: "Language-learning App",
       description: 'Project 1 description',
-      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
+      image: { mobile: '/images/Screenshot 2023-07-20 022314.png', desktop: '/images/Screenshot 2023-07-20 022314.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live1',
       sourceLink: 'https://example.com/source1',
