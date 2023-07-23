@@ -28,7 +28,7 @@
 - [📝 License](#license)
 
 
-# 📖 [My-Personal-Portfolio] <a name="about-project"></a>
+# 📖 [Personal-Portfolio] <a name="about-project"></a>
 
 
 
