@@ -4,7 +4,7 @@
   <img src="my website.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>My Personal Portfolio</b></h3>
+  <h3><b>My Personal Portfolio</b></h3>  
 
 </div>
 
