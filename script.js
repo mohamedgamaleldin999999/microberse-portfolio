@@ -15,7 +15,7 @@ const initApp = () => {
   const projects = [
     {
       name: "Language-learning App",
-      description: 'Project 1 description',
+      description: 'A sample App for Arabic curriculum',
       image: { mobile: '/images/Screenshot 2023-07-20 022314.png', desktop: '/images/Screenshot 2023-07-20 022314.png' },
       technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://arabic-with-jamal.github.io/html/Egyptian%20Arabic/Starter/Lesson-01/01.html',
@@ -23,10 +23,10 @@ const initApp = () => {
     },
 
     {
-      name: "Most-Post Storie's <br/> Gain+Glory",
-      description: 'Project 2 description',
+      name: "Language learning app with React",
+      description: 'extensive app for Egyptian Arabic',
       image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
-      technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+      technologies: ['React', 'CSS', 'JavaScript', 'HTML'],
       liveLink: 'https://example.com/live2',
       sourceLink: 'https://example.com/source2',
     },
