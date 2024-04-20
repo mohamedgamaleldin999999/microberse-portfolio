@@ -25,9 +25,9 @@ const initApp = () => {
     {
       name: "Language learning app with React",
       description: 'extensive app for Egyptian Arabic',
-      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/desk-porto.png' },
+      image: { mobile: './images/Snapshoot Portfolio (1).png', desktop: './images/secone website.png' },
       technologies: ['React', 'CSS', 'JavaScript', 'HTML'],
-      liveLink: 'https://example.com/live2',
+      liveLink: 'https://arabic-with-jamal.github.io/Egyptian-Arabic/index.html',
       sourceLink: 'https://example.com/source2',
     },
 
